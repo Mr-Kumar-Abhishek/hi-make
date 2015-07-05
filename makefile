@@ -1,2 +1,5 @@
-himake: himake.c printinghi.c
-	gcc -o himake himake.c printinghi.c -I.
+CC=gcc
+CFLAGS=-I.
+
+himake: himake.o printinghi.o
+	$(CC) -o himake himake.o printinghi.o -I.
