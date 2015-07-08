@@ -7,4 +7,4 @@ OBJ = himake.o printinghi.o
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 himake: $(OBJ)
-	$(CC) -o himake himake.o printinghi.o -I.
+	$(CC) -o $@ $^ $(CFLAGS)
